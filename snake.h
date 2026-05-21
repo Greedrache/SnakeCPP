@@ -5,11 +5,15 @@
 class Snake
 {
 public:
+    Snake();
+
+    void Draw();
     void Move();
-    void ChangeDirection();
+    void ChangeDirection(Vector2 newDirection); // was ist vector2 warum mit 2 was ist vector?
     void GrowUp();
 
 private:
-    void AutoDirection();
-    int snakeSize;
+    std::vector<Vector2> body; // was wird hier gemacht ???
+    
+    Vector2 direction; // keine ahnung
 };
